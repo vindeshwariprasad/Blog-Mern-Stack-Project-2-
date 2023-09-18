@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+     <%- include('partials/header'); -%>
+    <h1>home</h1>
+    <p><%=para%></p>
+
+
+    <% for (var i=0;i<newposts.length;i++){ %>
+
+
+      <h1><%=newposts[i].title%></h1>
+      <p><%=newposts[i].post.substring(0,150)+"...."%>
+        <a href="/posts/<%=newposts[i].title%>">Read More</a>
+      </p>
+
+    <% };%>
+     <%- include('partials/footer'); -%>
